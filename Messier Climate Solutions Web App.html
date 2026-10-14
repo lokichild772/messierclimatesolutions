@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Licensed HVAC Contractor in South Florida. 24/7 AC Repair, Maintenance, & Replacement serving Port St. Lucie, Wellington, Royal Palm Beach, Lake Okeechobee, & Fort Lauderdale. Call 561-772-2115.">
+    <meta name="keywords" content="AC Repair South Florida, Licensed HVAC Contractor, Air Conditioning Installation Wellington, Port St Lucie AC Service, Fort Lauderdale Emergency AC Repair, Messier Climate Solutions">
+    <title>Messier Climate Solutions | Licensed South Florida AC Repair & HVAC Experts</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandNavy: '#0a2540',
+                        brandBlue: '#0070f3',
+                        brandIce: '#00d2ff',
+                        brandGold: '#ffb703',
+                        brandDark: '#071527',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(10, 37, 64, 0.92) 0%, rgba(7, 21, 39, 0.95) 100%), 
+                        url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .pulse-gold {
+            box-shadow: 0 0 0 0 rgba(255, 183, 3, 0.7);
+            animation: pulse-gold-anim 2s infinite;
+        }
+        @keyframes pulse-gold-anim {
+            0% { box-shadow: 0 0 0 0 rgba(255, 183, 3, 0.7); }
+            70% { box-shadow: 0 0 0 12px rgba(255, 183, 3, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 183, 3, 0); }
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a2540; }
+        ::-webkit-scrollbar-thumb { background: #00d2ff; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Emergency Call Bar -->
+    <div class="bg-brandNavy text-white py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm font-medium gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5 bg-red-600/90 text-white px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider animate-pulse">
+                    <i class="fa-solid fa-bolt text-yellow-300"></i> 24/7 South Florida Emergency
+                </span>
+                <span class="hidden md:inline text-slate-300">Serving PSL, Wellington, Royal Palm, Lake Okeechobee & Ft. Lauderdale</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-shield-halved mr-1"></i> State Licensed HVAC Contractor</span>
+                <a href="tel:5617722115" class="text-brandIce hover:text-white font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-phone"></i> (561) 772-2115
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Business Logo & Title -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-brandNavy via-brandBlue to-brandIce rounded-xl flex items-center justify-center text-white text-2xl shadow-lg shadow-brandBlue/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1">
+                            <span class="text-2xl font-black tracking-tight text-brandNavy">MESSIER</span>
+                            <span class="text-2xl font-black tracking-tight text-brandIce">CLIMATE</span>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Air Conditioning & Heat | License Certified</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-8 font-semibold text-slate-700 text-sm">
+                    <a href="#about" class="hover:text-brandBlue transition-colors">Why Messier</a>
+                    <a href="#services" class="hover:text-brandBlue transition-colors">Services</a>
+                    <a href="#pricing" class="hover:text-brandBlue transition-colors">Pricing Comparison</a>
+                    <a href="#coverage" class="hover:text-brandBlue transition-colors">Service Area</a>
+                    <a href="#reviews" class="hover:text-brandBlue transition-colors">Reviews</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="tel:5617722115" class="flex flex-col text-right">
+                        <span class="text-xs font-semibold text-slate-400 uppercase">Owner / Technician Josh</span>
+                        <span class="text-lg font-black text-brandNavy tracking-tight hover:text-brandBlue">(561) 772-2115</span>
+                    </a>
+                    <a href="#quote" class="bg-brandBlue hover:bg-blue-600 text-white font-bold px-5 py-2.5 rounded-lg shadow-md shadow-brandBlue/30 hover:shadow-lg transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i> Book Online
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Why Messier</a>
+            <a href="#services" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Services & Pricing</a>
+            <a href="#pricing" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Competitor Rates</a>
+            <a href="#coverage" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Service Area</a>
+            <a href="#reviews" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Reviews</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:5617722115" class="w-full text-center bg-brandNavy text-white font-bold py-3 rounded-lg">
+                    <i class="fa-solid fa-phone mr-2"></i> Call Josh (561) 772-2115
+                </a>
+                <a href="#quote" class="w-full text-center bg-brandBlue text-white font-bold py-3 rounded-lg">
+                    Request Free Estimate
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (SEO Keyword Optimized) -->
+    <section class="hero-bg text-white py-16 lg:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brandBlue/30 border border-brandIce/40 px-3.5 py-1.5 rounded-full text-brandIce text-xs sm:text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-certificate"></i> Licensed & Insured HVAC Specialist
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Beat The Florida Heat with <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandIce via-sky-300 to-white">Fast, Reliable AC Repair</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+                        Owned & operated by licensed technician <strong class="text-white font-semibold">Josh Messier</strong>. Delivering rapid 24/7 cooling solutions across South Florida—from <span class="text-brandIce">Port St. Lucie to Fort Lauderdale</span> and inland to <span class="text-brandIce">Wellington, Royal Palm, & Lake Okeechobee</span>.
+                    </p>
+
+                    <!-- Trust Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm">
+                        <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-lg backdrop-blur-sm border border-white/10">
+                            <i class="fa-solid fa-clock text-brandIce text-lg"></i>
+                            <span>Same-Day Response</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-lg backdrop-blur-sm border border-white/10">
+                            <i class="fa-solid fa-hand-holding-dollar text-emerald-400 text-lg"></i>
+                            <span>No Hidden Fees</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-lg backdrop-blur-sm border border-white/10 col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-award text-yellow-400 text-lg"></i>
+                            <span>Licensed & Backed</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 pt-4 justify-center lg:justify-start">
+                        <a href="tel:5617722115" class="w-full sm:w-auto bg-gradient-to-r from-brandGold to-amber-500 hover:from-amber-500 hover:to-brandGold text-brandNavy font-extrabold px-8 py-4 rounded-xl shadow-xl hover:shadow-brandGold/30 transition-all text-center flex items-center justify-center gap-3 text-lg pulse-gold">
+                            <i class="fa-solid fa-phone-volume text-xl"></i> Emergency Call: (561) 772-2115
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-4 rounded-xl transition-all text-center">
+                            Explore Services & Rates
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Quick Lead Capture Card -->
+                <div id="quote" class="lg:col-span-5">
+                    <div class="bg-white text-slate-900 rounded-2xl shadow-2xl p-6 sm:p-8 border border-slate-100 relative">
+                        <div class="absolute -top-3 right-6 bg-emerald-500 text-white text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full shadow-md">
+                            Direct to Josh's Phone
+                        </div>
+                        <h2 class="text-2xl font-bold text-brandNavy mb-1">Request Service or Quote</h2>
+                        <p class="text-slate-500 text-xs mb-6">Fill this out for priority dispatch or immediate call-back.</p>
+
+                        <form id="heroLeadForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all">
+                            </div>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+                                    <input type="tel" required placeholder="(561) 000-0000" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">City / Zip Code</label>
+                                    <input type="text" required placeholder="Wellington / 33414" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Needed</label>
+                                <select required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all bg-white">
+                                    <option value="">Select Service Type...</option>
+                                    <option value="Emergency Repair (Not Cooling)">AC Not Cooling / Blowing Warm (Emergency)</option>
+                                    <option value="Maintenance Tune-Up">Routine AC Maintenance & Tune-Up</option>
+                                    <option value="System Replacement">New AC Unit Installation Quote</option>
+                                    <option value="Duct Cleaning / IAQ">Duct Cleaning & Indoor Air Quality</option>
+                                    <option value="Diagnostic Check">Diagnostic Check ($79 Special)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Brief Description</label>
+                                <textarea rows="2" placeholder="e.g. System is making noise or thermostat reading 82°..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brandNavy hover:bg-slate-900 text-white font-bold py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane text-brandIce"></i> Send Request to Technician
+                            </button>
+                        </form>
+                        
+                        <div id="formFeedback" class="hidden mt-4 p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-lg text-xs font-medium text-center">
+                            <i class="fa-solid fa-circle-check text-emerald-600 text-base mr-1"></i> Your request has been sent! Josh Messier will call/text you shortly at the number provided.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST & ADVANTAGE SECTION -->
+    <section id="about" class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brandBlue mb-2">The Messier Difference</h2>
+                <p class="text-3xl font-extrabold text-brandNavy">Direct Access to the Licensed Expert, Not a Middleman</p>
+                <p class="mt-3 text-slate-600 text-base">Big South Florida HVAC franchises overcharge to pay for expensive TV ads. At Messier Climate Solutions, you work directly with owner & licensed technician Josh Messier for top-tier craftsmanship at honest prices.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-blue-100 text-brandBlue rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-2">Fully Licensed & Insured</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Work with complete peace of mind. Every diagnosis, repair, and installation complies strictly with Florida state building codes and safety standards.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-2">Fast Coastal & Inland Response</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Strategically serving St. Lucie, Martin, Palm Beach, and Broward counties, with special coverage for inland communities like Wellington, Royal Palm, & Okeechobee.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-2">Upfront Transparent Rates</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">No surprise charges or forced upgrades. We explain the exact issue with photo/video evidence and give clear pricing before any work begins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SERVICE TABS & DETAILS SECTION -->
+    <section id="services" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brandIce font-bold text-xs uppercase tracking-widest">Interactive Service Directory</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-1">Comprehensive South Florida HVAC Solutions</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">Click any category below to view detailed breakdown, pricing benchmarks, and service guarantees.</p>
+            </div>
+
+            <!-- Tab Buttons Header -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 border-b border-slate-800 pb-6">
+                <button onclick="switchTab('repair')" id="tab-repair" class="tab-btn active px-5 py-3 rounded-xl font-bold text-sm transition-all bg-brandBlue text-white shadow-lg shadow-brandBlue/30">
+                    <i class="fa-solid fa-wrench mr-2"></i> AC Repair & Troubleshooting
+                </button>
+                <button onclick="switchTab('install')" id="tab-install" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+                    <i class="fa-solid fa-box mr-2"></i> System Replacement
+                </button>
+                <button onclick="switchTab('tuneup')" id="tab-tuneup" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+                    <i class="fa-solid fa-gauge-high mr-2"></i> Maintenance & Tune-Up
+                </button>
+                <button onclick="switchTab('iaq')" id="tab-iaq" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+                    <i class="fa-solid fa-wind mr-2"></i> Duct Cleaning & IAQ
+                </button>
+                <button onclick="switchTab('emergency')" id="tab-emergency" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+                    <i class="fa-solid fa-triangle-exclamation mr-2 text-yellow-400"></i> Emergency 24/7
+                </button>
+            </div>
+
+            <!-- Dynamic Tab Content Box -->
+            <div class="bg-slate-800/80 rounded-2xl border border-slate-700 p-6 sm:p-10 shadow-2xl">
+                
+                <!-- TAB 1: AC REPAIR -->
+                <div id="content-repair" class="tab-content grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-block bg-blue-500/20 text-brandIce text-xs font-bold px-3 py-1 rounded-md">
+                            Most Requested Service
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">Emergency & Fast AC Repair</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            When your air conditioner stops blowing cold air in South Florida humidity, you need fast, expert diagnostic service. Josh Messier diagnoses capacitor failures, frozen coils, fan motor burnouts, and refrigerant leaks promptly.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Comprehensive 21-Point System Diagnostic</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Leak detection & eco-friendly refrigerant recharge (R-410A / R-32)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Drain line clearing & anti-algae treatment included</li>
+                        </ul>
+                        <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700 flex flex-wrap justify-between items-center gap-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">South Florida Market Standard Diagnostic:</span>
+                                <span class="text-xl font-extrabold text-brandIce">$79 Service Call Special</span> <span class="text-xs text-slate-400">(Waived with Repair)</span>
+                            </div>
+                            <a href="tel:5617722115" class="bg-brandBlue hover:bg-blue-600 text-white text-xs font-bold px-4 py-2.5 rounded-lg">
+                                Call For Repair
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=800&auto=format&fit=crop" alt="AC Repair Service Technician" class="rounded-xl shadow-lg border border-slate-700 w-full object-cover h-64 lg:h-80">
+                    </div>
+                </div>
+
+                <!-- TAB 2: INSTALLATION -->
+                <div id="content-install" class="tab-content hidden grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-block bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1 rounded-md">
+                            High Efficiency Upgrades
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">New AC Unit Installation & Replacement</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Is your unit over 10 years old or causing soaring electric bills? We install top-tier high-SEER2 brands (Rheem, Trane, Carrier, Goodman) sized perfectly for South Florida homes to drastically lower monthly energy costs.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Free In-Home Load Calculation & Estimate</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 10-Year Manufacturer Parts Warranty</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> FPL Rebate & Energy-Star Optimization Assistance</li>
+                        </ul>
+                        <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700 flex flex-wrap justify-between items-center gap-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">Average Complete Replacement Range:</span>
+                                <span class="text-xl font-extrabold text-emerald-400">$4,500 - $9,500</span> <span class="text-xs text-slate-400">(Depending on tonnage/SEER2)</span>
+                            </div>
+                            <a href="#quote" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg">
+                                Get Free Quote
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" alt="AC Installation" class="rounded-xl shadow-lg border border-slate-700 w-full object-cover h-64 lg:h-80">
+                    </div>
+                </div>
+
+                <!-- TAB 3: TUNE-UP -->
+                <div id="content-tuneup" class="tab-content hidden grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-block bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-md">
+                            Preventative Maintenance
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">24-Point AC Maintenance Tune-Up</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Prevent costly summer breakdowns and extend system lifespan with regular servicing. Includes drain line flushing to prevent water overflow damage—a major issue in South Florida humidity.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Condenser coil wash & electrical component check</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Drain line vacuum + nitrogen flush + pan treatment</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Thermostat calibration & airflow balancing</li>
+                        </ul>
+                        <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700 flex flex-wrap justify-between items-center gap-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">Single System Maintenance Special:</span>
+                                <span class="text-xl font-extrabold text-amber-400">$89 Tune-Up</span> <span class="text-xs text-slate-400">(Regular $129)</span>
+                            </div>
+                            <a href="#quote" class="bg-amber-500 hover:bg-amber-600 text-brandNavy text-xs font-bold px-4 py-2.5 rounded-lg">
+                                Schedule Servicing
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop" alt="AC Maintenance" class="rounded-xl shadow-lg border border-slate-700 w-full object-cover h-64 lg:h-80">
+                    </div>
+                </div>
+
+                <!-- TAB 4: IAQ & DUCT -->
+                <div id="content-iaq" class="tab-content hidden grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-block bg-purple-500/20 text-purple-300 text-xs font-bold px-3 py-1 rounded-md">
+                            Clean Air & Health
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">Duct Sanitation & Indoor Air Quality</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Florida's damp climate creates prime conditions for mold, mildew, and dust mites inside ductwork. Breathe cleaner, allergen-free air with professional duct cleaning and UV light purification.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Whole-home duct inspection & sanitization treatment</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> UV light installation to eliminate mold spores</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> High-efficiency MERV filtration upgrades</li>
+                        </ul>
+                        <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700 flex flex-wrap justify-between items-center gap-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">IAQ & Sanitation Packages:</span>
+                                <span class="text-xl font-extrabold text-purple-300">$299 - $599</span>
+                            </div>
+                            <a href="#quote" class="bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg">
+                                Book Air Inspection
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <img src="https://images.unsplash.com/photo-1527016016493-4e2335994444?q=80&w=800&auto=format&fit=crop" alt="Duct Cleaning" class="rounded-xl shadow-lg border border-slate-700 w-full object-cover h-64 lg:h-80">
+                    </div>
+                </div>
+
+                <!-- TAB 5: EMERGENCY -->
+                <div id="content-emergency" class="tab-content hidden grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-block bg-red-500/20 text-red-400 text-xs font-bold px-3 py-1 rounded-md">
+                            Available 24 Hours / 7 Days
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">24/7 South Florida Emergency AC Service</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            AC breakdowns don't wait for business hours. Whether it's 10 PM on a Saturday in Wellington or a Sunday morning in Port St. Lucie, Josh is on call to restore your home's cool air.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Fully stocked service vehicle for immediate on-site repair</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Priority service dispatch across Port St. Lucie, Palm Beach & Fort Lauderdale</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Straightforward emergency flat rates</li>
+                        </ul>
+                        <div class="p-4 bg-red-950/40 border border-red-900/60 rounded-xl flex flex-wrap justify-between items-center gap-4">
+                            <div>
+                                <span class="text-xs text-red-300 block">Immediate After-Hours Assistance:</span>
+                                <span class="text-xl font-extrabold text-red-400">Direct Hotline: (561) 772-2115</span>
+                            </div>
+                            <a href="tel:5617722115" class="bg-red-600 hover:bg-red-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg animate-pulse">
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop" alt="Emergency AC Dispatch" class="rounded-xl shadow-lg border border-slate-700 w-full object-cover h-64 lg:h-80">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPETITOR RESEARCH & PRICING TRANSPARENCY SECTION -->
+    <section id="pricing" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-brandBlue font-bold text-xs uppercase tracking-widest">Market Comparison</span>
+                <h2 class="text-3xl font-black text-brandNavy mt-1">South Florida HVAC Competitor Pricing Guide</h2>
+                <p class="mt-2 text-slate-600 text-sm sm:text-base">We researched average competitor pricing across Palm Beach, St. Lucie, and Broward counties so you get maximum transparency and value.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-brandNavy text-white text-xs uppercase tracking-wider">
+                                <th class="p-4 sm:p-5">HVAC Service Category</th>
+                                <th class="p-4 sm:p-5">Avg. Big Franchise Rate</th>
+                                <th class="p-4 sm:p-5 bg-brandBlue text-white">Messier Climate Solutions</th>
+                                <th class="p-4 sm:p-5">The Messier Advantage</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm">
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-bold text-slate-800">Diagnostic / Service Call Fee</td>
+                                <td class="p-4 text-slate-500">$99 - $149</td>
+                                <td class="p-4 font-bold text-brandBlue bg-blue-50/50">$79 Flat Rate</td>
+                                <td class="p-4 text-xs text-slate-600">Waived completely if repair work is performed on-site.</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-bold text-slate-800">24-Point AC Maintenance Tune-Up</td>
+                                <td class="p-4 text-slate-500">$129 - $189</td>
+                                <td class="p-4 font-bold text-brandBlue bg-blue-50/50">$89 Promo Rate</td>
+                                <td class="p-4 text-xs text-slate-600">Includes drain line flush & coil wash (most charge extra).</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-bold text-slate-800">Leak Repair & Refrigerant Recharge</td>
+                                <td class="p-4 text-slate-500">$350 - $750+</td>
+                                <td class="p-4 font-bold text-brandBlue bg-blue-50/50">$250 - $550</td>
+                                <td class="p-4 text-xs text-slate-600">Honest leak location without pushing unnecessary unit replacements.</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-bold text-slate-800">Complete High-SEER System Replacement</td>
+                                <td class="p-4 text-slate-500">$6,000 - $11,000+</td>
+                                <td class="p-4 font-bold text-brandBlue bg-blue-50/50">$4,500 - $9,200</td>
+                                <td class="p-4 text-xs text-slate-600">Direct owner installation ensures flawless air handler & condenser setup.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center text-xs text-slate-500">
+                <i class="fa-solid fa-circle-info mr-1"></i> Rates based on competitive research across PSL, Jupiter, West Palm Beach, Wellington, and Fort Lauderdale HVAC providers.
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE AREA & COVERAGE MAP MATRIX -->
+    <section id="coverage" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brandBlue font-bold text-xs uppercase tracking-widest">Regional Coverage</span>
+                    <h2 class="text-3xl font-black text-brandNavy">Serving South Florida Coastal & Inland Hubs</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        From coastal St. Lucie and Broward counties to inland communities near Lake Okeechobee, Josh Messier brings fast service vehicles right to your door.
+                    </p>
+
+                    <!-- Key Cities Badges Grid -->
+                    <div class="grid grid-cols-2 gap-3 pt-2">
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brandBlue"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800">Port St. Lucie</h4>
+                                <span class="text-[10px] text-slate-500">St. Lucie County</span>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brandBlue"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800">Fort Lauderdale</h4>
+                                <span class="text-[10px] text-slate-500">Broward County</span>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brandBlue"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800">Wellington</h4>
+                                <span class="text-[10px] text-slate-500">Western Palm Beach</span>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brandBlue"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800">Royal Palm Beach</h4>
+                                <span class="text-[10px] text-slate-500">Western Palm Beach</span>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brandBlue"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800">Lake Okeechobee</h4>
+                                <span class="text-[10px] text-slate-500">Inland Region</span>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brandBlue"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-800">West Palm / Stuart</h4>
+                                <span class="text-[10px] text-slate-500">Palm Beach / Martin</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-blue-50 border border-blue-200 rounded-xl text-xs text-brandNavy">
+                        <strong class="font-bold">Not sure if you are in range?</strong> Give Josh a quick text or call at <a href="tel:5617722115" class="font-extrabold underline text-brandBlue">(561) 772-2115</a> to confirm rapid dispatch time.
+                    </div>
+                </div>
+
+                <!-- Visual Interactive Map Card -->
+                <div class="lg:col-span-7">
+                    <div class="bg-brandNavy rounded-2xl p-6 text-white shadow-2xl border border-slate-800 relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+                            <h3 class="font-bold text-lg text-white flex items-center gap-2">
+                                <i class="fa-solid fa-map-location-dot text-brandIce"></i> Interactive Service Radius Matrix
+                            </h3>
+                            <span class="text-xs bg-emerald-500/20 text-emerald-400 font-bold px-2.5 py-1 rounded-md">Technician On Duty</span>
+                        </div>
+
+                        <!-- Simulated Coverage Map Visualization -->
+                        <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 relative min-h-[300px] flex flex-col justify-between">
+                            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#00d2ff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                            
+                            <!-- North / Port St Lucie -->
+                            <div class="flex justify-between items-center relative z-10 bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                                <div>
+                                    <span class="text-xs font-bold text-brandIce">NORTH CORRIDOR</span>
+                                    <p class="text-xs text-slate-300">Port St. Lucie • Stuart • Hobe Sound</p>
+                                </div>
+                                <span class="text-[11px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded">St. Lucie / Martin</span>
+                            </div>
+
+                            <!-- West / Inland -->
+                            <div class="flex justify-between items-center relative z-10 bg-slate-800/80 p-3 rounded-lg border border-slate-700 my-3">
+                                <div>
+                                    <span class="text-xs font-bold text-yellow-400">INLAND / WEST CORRIDOR</span>
+                                    <p class="text-xs text-slate-300">Wellington • Royal Palm Beach • Lake Okeechobee</p>
+                                </div>
+                                <span class="text-[11px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded">Western Palm Beach</span>
+                            </div>
+
+                            <!-- South / Ft Lauderdale -->
+                            <div class="flex justify-between items-center relative z-10 bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                                <div>
+                                    <span class="text-xs font-bold text-emerald-400">SOUTH CORRIDOR</span>
+                                    <p class="text-xs text-slate-300">Jupiter • West Palm Beach • Fort Lauderdale</p>
+                                </div>
+                                <span class="text-[11px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded">Broward / Central PB</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
+                            <span><i class="fa-solid fa-truck-fast text-brandIce mr-1"></i> Rapid Mobile Service Unit</span>
+                            <span>Licensed & Insured</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS & TESTIMONIALS + LEAVE A REVIEW MODAL -->
+    <section id="reviews" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-brandBlue font-bold text-xs uppercase tracking-widest">Customer Feedback</span>
+                    <h2 class="text-3xl font-black text-brandNavy mt-1">What South Florida Homeowners Say</h2>
+                </div>
+                <button onclick="openReviewModal()" class="bg-brandNavy hover:bg-slate-800 text-white font-bold px-5 py-3 rounded-xl shadow-md transition-all text-sm flex items-center gap-2 self-start md:self-auto">
+                    <i class="fa-solid fa-pen-to-square text-brandIce"></i> Leave a Customer Review
+                </button>
+            </div>
+
+            <div id="reviewsContainer" class="grid md:grid-cols-3 gap-6">
+                <!-- Review Card 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400">Wellington, FL</span>
+                    </div>
+                    <p class="text-slate-700 text-sm italic">"Our AC stopped cooling late on a hot Friday afternoon. Josh responded immediately, identified a blown capacitor, and had our house ice cold in under an hour. Fair price and very professional!"</p>
+                    <div class="pt-2 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-brandNavy text-white font-bold text-xs flex items-center justify-center">
+                            RM
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandNavy">Robert M.</h4>
+                            <span class="text-[10px] text-slate-400">Verified Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400">Port St. Lucie, FL</span>
+                    </div>
+                    <p class="text-slate-700 text-sm italic">"Messier Climate Solutions replaced our old 14 SEER air conditioner with a modern unit. Josh's estimate was significantly lower than big franchise companies and the install work was immaculate."</p>
+                    <div class="pt-2 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-brandBlue text-white font-bold text-xs flex items-center justify-center">
+                            SK
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandNavy">Sarah K.</h4>
+                            <span class="text-[10px] text-slate-400">Verified Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400">Royal Palm Beach, FL</span>
+                    </div>
+                    <p class="text-slate-700 text-sm italic">"Great preventative tune-up service! Cleared out a backed-up drain line that was about to overflow in my attic. Honest guy who knows his business inside out."</p>
+                    <div class="pt-2 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold text-xs flex items-center justify-center">
+                            DL
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandNavy">David L.</h4>
+                            <span class="text-[10px] text-slate-400">Verified Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CTA & CONTACT DETAIL -->
+    <footer class="bg-brandDark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                
+                <div class="space-y-3 md:col-span-1">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-brandBlue rounded-lg flex items-center justify-center text-white text-base">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white tracking-tight">MESSIER CLIMATE</span>
+                    </div>
+                    <p class="text-xs leading-relaxed">
+                        Licensed & Insured South Florida Air Conditioning & Heating Contractor. Serving PSL to Ft. Lauderdale and inland regions.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Service Areas</h4>
+                    <ul class="space-y-1.5 text-xs">
+                        <li>Port St. Lucie & Stuart</li>
+                        <li>Wellington & Royal Palm Beach</li>
+                        <li>Lake Okeechobee & Inland</li>
+                        <li>West Palm Beach & Jupiter</li>
+                        <li>Fort Lauderdale & Broward</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Core HVAC Services</h4>
+                    <ul class="space-y-1.5 text-xs">
+                        <li>24/7 Emergency AC Repair</li>
+                        <li>AC System Replacement</li>
+                        <li>Maintenance & Drain Flushing</li>
+                        <li>Duct Sanitization & IAQ</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3">Direct Contact</h4>
+                    <p class="text-xs mb-1">Owner: <strong class="text-white">Josh Messier</strong></p>
+                    <a href="tel:5617722115" class="text-lg font-bold text-brandIce block mb-2">(561) 772-2115</a>
+                    <p class="text-xs text-emerald-400"><i class="fa-solid fa-shield-halved mr-1"></i> Licensed & Insured Contractor</p>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Messier Climate Solutions. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <span>Privacy Policy</span>
+                    <span>Terms of Service</span>
+                    <span>FL HVAC License Certified</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AUTOMATED BOT WIDGET ("Messier CoolBot") -->
+    <div id="botWidgetContainer" class="fixed bottom-5 right-5 z-50">
+        <!-- Floating Bot Toggle Button -->
+        <button id="botToggleBtn" onclick="toggleCoolBot()" class="bg-gradient-to-r from-brandBlue to-brandIce text-brandNavy font-extrabold px-4 py-3 rounded-full shadow-2xl hover:scale-105 transition-all flex items-center gap-2 border-2 border-white">
+            <div class="w-8 h-8 bg-brandNavy rounded-full flex items-center justify-center text-brandIce text-sm">
+                <i class="fa-solid fa-robot"></i>
+            </div>
+            <span class="text-xs tracking-wide">Messier CoolBot</span>
+            <span class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-ping"></span>
+        </button>
+
+        <!-- Bot Chat Window -->
+        <div id="coolBotWindow" class="hidden absolute bottom-16 right-0 w-[340px] sm:w-[380px] bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col">
+            <!-- Bot Header -->
+            <div class="bg-brandNavy text-white p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 bg-brandBlue rounded-full flex items-center justify-center text-white text-lg">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold">Messier CoolBot</h4>
+                        <span class="text-[10px] text-emerald-400 flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> Automated Assistant
+                        </span>
+                    </div>
+                </div>
+                <button onclick="toggleCoolBot()" class="text-slate-400 hover:text-white text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Bot Chat Area -->
+            <div id="botMessages" class="p-4 h-72 overflow-y-auto space-y-3 bg-slate-50 text-xs">
+                <div class="flex gap-2">
+                    <div class="w-6 h-6 rounded-full bg-brandNavy text-white flex items-center justify-center text-[10px] shrink-0">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-slate-200 text-slate-700 shadow-sm">
+                        Hi! I'm Josh's automated HVAC assistant. How can I help you today?
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bot Quick Options -->
+            <div id="botOptions" class="p-3 bg-white border-t border-slate-100 flex flex-col gap-2">
+                <button onclick="handleBotChoice('warm_air')" class="text-left text-xs bg-slate-100 hover:bg-blue-50 hover:text-brandBlue p-2 rounded-lg transition-all border border-slate-200 font-medium">
+                    ❄️ My AC isn't blowing cold air
+                </button>
+                <button onclick="handleBotChoice('quote')" class="text-left text-xs bg-slate-100 hover:bg-blue-50 hover:text-brandBlue p-2 rounded-lg transition-all border border-slate-200 font-medium">
+                    🏷️ Need a quote for a new AC unit
+                </button>
+                <button onclick="handleBotChoice('tuneup')" class="text-left text-xs bg-slate-100 hover:bg-blue-50 hover:text-brandBlue p-2 rounded-lg transition-all border border-slate-200 font-medium">
+                    🛠️ Schedule $89 Maintenance Tune-up
+                </button>
+                <button onclick="handleBotChoice('call')" class="text-left text-xs bg-slate-100 hover:bg-amber-50 hover:text-amber-700 p-2 rounded-lg transition-all border border-amber-200 font-medium text-amber-800">
+                    📞 Request Immediate Call from Josh
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LEAVE A REVIEW MODAL -->
+    <div id="reviewModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 relative">
+            <button onclick="closeReviewModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <h3 class="text-xl font-bold text-brandNavy mb-1">Leave a Review for Josh</h3>
+            <p class="text-slate-500 text-xs mb-4">Your feedback helps local homeowners choose trusted HVAC service.</p>
+
+            <form id="reviewForm" onsubmit="handleReviewSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name</label>
+                    <input type="text" id="reviewAuthor" required placeholder="e.g. Michael B." class="w-full p-2.5 border border-slate-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-brandBlue">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">City / Location</label>
+                    <input type="text" id="reviewCity" required placeholder="e.g. Fort Lauderdale" class="w-full p-2.5 border border-slate-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-brandBlue">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Star Rating</label>
+                    <select id="reviewRating" class="w-full p-2.5 border border-slate-300 rounded-lg text-sm bg-white outline-none focus:ring-2 focus:ring-brandBlue">
+                        <option value="5">⭐⭐⭐⭐⭐ (5/5 Excellent)</option>
+                        <option value="4">⭐⭐⭐⭐ (4/5 Very Good)</option>
+                        <option value="3">⭐⭐⭐ (3/5 Average)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Feedback</label>
+                    <textarea id="reviewText" rows="3" required placeholder="How was the cooling service?" class="w-full p-2.5 border border-slate-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-brandBlue"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-brandBlue hover:bg-blue-600 text-white font-bold py-3 rounded-lg shadow-md transition-all text-sm">
+                    Submit Review
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR INTERACTIVITY & BOT LOGIC -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tab Switching Functionality
+        function switchTab(tabId) {
+            // Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            // Remove active classes on buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-brandBlue', 'text-white', 'shadow-lg', 'shadow-brandBlue/30');
+                btn.classList.add('bg-slate-800', 'text-slate-300');
+            });
+
+            // Show selected content
+            const targetContent = document.getElementById(`content-${tabId}`);
+            if (targetContent) targetContent.classList.remove('hidden');
+
+            // Highlight selected button
+            const targetBtn = document.getElementById(`tab-${tabId}`);
+            if (targetBtn) {
+                targetBtn.classList.remove('bg-slate-800', 'text-slate-300');
+                targetBtn.classList.add('bg-brandBlue', 'text-white', 'shadow-lg', 'shadow-brandBlue/30');
+            }
+        }
+
+        // Form Submission Handling
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const feedback = document.getElementById('formFeedback');
+            feedback.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => {
+                feedback.classList.add('hidden');
+            }, 6000);
+        }
+
+        // CoolBot Assistant Toggle
+        function toggleCoolBot() {
+            const win = document.getElementById('coolBotWindow');
+            win.classList.toggle('hidden');
+        }
+
+        // CoolBot Pre-loaded Decision Logic
+        function handleBotChoice(choice) {
+            const messages = document.getElementById('botMessages');
+            
+            let userText = "";
+            let botReply = "";
+
+            if (choice === 'warm_air') {
+                userText = "My AC isn't blowing cold air.";
+                botReply = "A warm-blowing AC usually indicates a dirty coil, low refrigerant, or a bad capacitor. Josh offers a $79 diagnostic check to pinpoint the exact issue. Would you like to call him directly at (561) 772-2115 or leave your number?";
+            } else if (choice === 'quote') {
+                userText = "I need a quote on a new AC unit.";
+                botReply = "Josh installs energy-efficient high-SEER2 units (Rheem, Trane, Carrier). Complete replacements range from $4,500 to $9,500 depending on size. Call (561) 772-2115 for a free in-home estimate!";
+            } else if (choice === 'tuneup') {
+                userText = "I'd like to schedule an $89 Tune-Up.";
+                botReply = "Great choice! Regular servicing prevents expensive water leaks and drain line clogs. Please scroll up to fill out our quick booking form or call Josh directly at (561) 772-2115.";
+            } else if (choice === 'call') {
+                userText = "Please request a direct call from Josh Messier.";
+                botReply = "Understood! Josh Messier has been notified. You can also tap the phone link below to connect directly right now: <br><a href='tel:5617722115' class='text-brandBlue font-bold underline mt-1 inline-block'>(561) 772-2115</a>";
+            }
+
+            // Append User Message
+            messages.innerHTML += `
+                <div class="flex justify-end my-2">
+                    <div class="bg-brandBlue text-white p-2.5 rounded-2xl rounded-tr-none text-xs max-w-[80%] shadow-sm">
+                        ${userText}
+                    </div>
+                </div>
+            `;
+
+            // Append Bot Response with small delay
+            setTimeout(() => {
+                messages.innerHTML += `
+                    <div class="flex gap-2 my-2">
+                        <div class="w-6 h-6 rounded-full bg-brandNavy text-white flex items-center justify-center text-[10px] shrink-0">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-slate-200 text-slate-700 shadow-sm">
+                            ${botReply}
+                        </div>
+                    </div>
+                `;
+                messages.scrollTop = messages.scrollHeight;
+            }, 400);
+        }
+
+        // Review Modal Handlers
+        function openReviewModal() {
+            document.getElementById('reviewModal').classList.remove('hidden');
+        }
+        function closeReviewModal() {
+            document.getElementById('reviewModal').classList.add('hidden');
+        }
+
+        function handleReviewSubmit(e) {
+            e.preventDefault();
+            const author = document.getElementById('reviewAuthor').value;
+            const city = document.getElementById('reviewCity').value;
+            const text = document.getElementById('reviewText').value;
+
+            const container = document.getElementById('reviewsContainer');
+            
+            const newReviewHtml = `
+                <div class="bg-white p-6 rounded-2xl border border-brandIce/40 shadow-md space-y-3 animate-fade-in">
+                    <div class="flex items-center justify-between">
+                        <div class="flex text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400">${city}, FL</span>
+                    </div>
+                    <p class="text-slate-700 text-sm italic">"${text}"</p>
+                    <div class="pt-2 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-brandIce text-brandNavy font-bold text-xs flex items-center justify-center">
+                            ${author.substring(0, 2).toUpperCase()}
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandNavy">${author}</h4>
+                            <span class="text-[10px] text-emerald-600 font-semibold">Recently Added Review</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            container.insertAdjacentHTML('afterbegin', newReviewHtml);
+            closeReviewModal();
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
