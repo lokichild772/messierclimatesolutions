@@ -1,0 +1,289 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Licensed HVAC Contractor in South Florida. 24/7 AC Repair, Maintenance, & Replacement serving Port St. Lucie, Wellington, Royal Palm Beach, Lake Okeechobee, & Fort Lauderdale. Call 561-772-2115.">
+    <meta name="keywords" content="AC Repair South Florida, Licensed HVAC Contractor, Air Conditioning Installation Wellington, Port St Lucie AC Service, Fort Lauderdale Emergency AC Repair, Messier Climate Solutions">
+    <title>Messier Climate Solutions | Licensed South Florida AC Repair & HVAC Experts</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandNavy: '#0f172a',
+                        brandBlue: '#0284c7',
+                        brandIce: '#38bdf8',
+                        brandOrange: '#f97316',
+                        brandDark: '#071527',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.93) 0%, rgba(7, 21, 39, 0.96) 100%), 
+                        url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .pulse-orange {
+            box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+            animation: pulse-orange-anim 2s infinite;
+        }
+        @keyframes pulse-orange-anim {
+            0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7); }
+            70% { box-shadow: 0 0 0 12px rgba(249, 115, 22, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #0284c7; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Emergency Call Banner -->
+    <div class="bg-slate-950 text-white py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm font-medium gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5 bg-brandOrange text-white px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider animate-pulse">
+                    <i class="fa-solid fa-bolt text-yellow-200"></i> 24/7 Emergency Dispatch
+                </span>
+                <span class="hidden md:inline text-slate-300">Serving Port St. Lucie to Fort Lauderdale & Inland Lake Okeechobee</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-shield-halved mr-1"></i> FL Licensed & Insured Contractor</span>
+                <a href="tel:5617722115" class="text-brandIce hover:text-white font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-phone"></i> (561) 772-2115
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Business Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-brandNavy via-brandBlue to-brandIce rounded-xl flex items-center justify-center text-white text-2xl shadow-lg shadow-brandBlue/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1">
+                            <span class="text-2xl font-black tracking-tight text-brandNavy">MESSIER</span>
+                            <span class="text-2xl font-black tracking-tight text-brandBlue">CLIMATE</span>
+                        </div>
+                        <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Air Conditioning & Heating Solutions</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-8 font-semibold text-slate-700 text-sm">
+                    <a href="#about" class="hover:text-brandBlue transition-colors">Why Messier</a>
+                    <a href="#services" class="hover:text-brandBlue transition-colors">Services & Pricing</a>
+                    <a href="#pricing" class="hover:text-brandBlue transition-colors">Competitor Comparison</a>
+                    <a href="#coverage" class="hover:text-brandBlue transition-colors">Service Area</a>
+                    <a href="#reviews" class="hover:text-brandBlue transition-colors">Reviews</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:5617722115" class="flex flex-col text-right">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase">Licensed Owner / Josh</span>
+                        <span class="text-lg font-black text-brandNavy tracking-tight hover:text-brandBlue">(561) 772-2115</span>
+                    </a>
+                    <a href="#quote" class="bg-brandBlue hover:bg-sky-700 text-white font-bold px-5 py-2.5 rounded-xl shadow-md shadow-brandBlue/20 hover:shadow-lg transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i> Book Online
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Why Messier</a>
+            <a href="#services" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Services & Rates</a>
+            <a href="#pricing" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Price Comparison</a>
+            <a href="#coverage" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Service Coverage</a>
+            <a href="#reviews" class="block py-2 text-slate-700 font-medium border-b border-slate-100">Client Reviews</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:5617722115" class="w-full text-center bg-brandNavy text-white font-bold py-3 rounded-xl">
+                    <i class="fa-solid fa-phone mr-2"></i> Call Josh (561) 772-2115
+                </a>
+                <a href="#quote" class="w-full text-center bg-brandBlue text-white font-bold py-3 rounded-xl">
+                    Request Free Estimate
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg text-white py-16 lg:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brandBlue/30 border border-brandIce/40 px-3.5 py-1.5 rounded-full text-brandIce text-xs sm:text-sm font-semibold">
+                        <i class="fa-solid fa-certificate"></i> Licensed & Insured South Florida HVAC Professional
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Fast, Reliable <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandIce via-sky-300 to-white">AC Repair & Installation</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+                        Owned & operated by licensed HVAC specialist <strong class="text-white font-semibold">Josh Messier</strong>. Delivering rapid 24/7 cooling solutions from <span class="text-brandIce font-semibold">Port St. Lucie to Fort Lauderdale</span> and inland to <span class="text-brandIce font-semibold">Wellington, Royal Palm Beach, & Lake Okeechobee</span>.
+                    </p>
+
+                    <!-- Trust Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm">
+                        <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-xl backdrop-blur-sm border border-white/10">
+                            <i class="fa-solid fa-clock text-brandIce text-lg"></i>
+                            <span>Same-Day Service</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-xl backdrop-blur-sm border border-white/10">
+                            <i class="fa-solid fa-hand-holding-dollar text-emerald-400 text-lg"></i>
+                            <span>Flat-Rate Pricing</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white/10 p-2.5 rounded-xl backdrop-blur-sm border border-white/10 col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-award text-amber-400 text-lg"></i>
+                            <span>FL State Certified</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 pt-4 justify-center lg:justify-start">
+                        <a href="tel:5617722115" class="w-full sm:w-auto bg-gradient-to-r from-brandOrange to-amber-600 hover:from-amber-600 hover:to-brandOrange text-white font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all text-center flex items-center justify-center gap-3 text-lg pulse-orange">
+                            <i class="fa-solid fa-phone-volume text-xl"></i> Emergency Call: (561) 772-2115
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-4 rounded-xl transition-all text-center">
+                            Explore Services & Rates
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Lead Capture Card -->
+                <div id="quote" class="lg:col-span-5">
+                    <div class="bg-white text-slate-900 rounded-2xl shadow-2xl p-6 sm:p-8 border border-slate-100 relative">
+                        <div class="absolute -top-3 right-6 bg-emerald-600 text-white text-[11px] font-bold uppercase tracking-wider py-1 px-3 rounded-full shadow-md">
+                            Direct to Josh's Mobile
+                        </div>
+                        <h2 class="text-2xl font-bold text-brandNavy mb-1">Request Service or Quote</h2>
+                        <p class="text-slate-500 text-xs mb-6">Complete below for immediate callback or priority dispatch.</p>
+
+                        <form id="heroLeadForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Full Name</label>
+                                <input type="text" required placeholder="e.g. John Smith" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all">
+                            </div>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+                                    <input type="tel" required placeholder="(561) 000-0000" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">City / Location</label>
+                                    <input type="text" required placeholder="e.g. Wellington" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Needed</label>
+                                <select required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all bg-white">
+                                    <option value="">Select Service Type...</option>
+                                    <option value="Emergency Repair (Not Cooling)">AC Not Cooling / Blowing Warm (Emergency)</option>
+                                    <option value="Maintenance Tune-Up">Routine AC Maintenance & Tune-Up ($99)</option>
+                                    <option value="System Replacement">New AC Unit Installation Quote</option>
+                                    <option value="Duct Cleaning / IAQ">Duct Cleaning & Indoor Air Quality</option>
+                                    <option value="Diagnostic Check">Diagnostic Check ($79 Special)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Brief Description</label>
+                                <textarea rows="2" placeholder="e.g. System is making loud noise and thermostat reads 80°..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brandBlue focus:border-brandBlue outline-none text-sm transition-all"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brandNavy hover:bg-slate-900 text-white font-bold py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane text-brandIce"></i> Dispatch Request to Josh
+                            </button>
+                        </form>
+                        
+                        <div id="formFeedback" class="hidden mt-4 p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-lg text-xs font-medium text-center">
+                            <i class="fa-solid fa-circle-check text-emerald-600 text-base mr-1"></i> Request dispatched! Josh Messier will contact you shortly at your provided phone number.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY MESSIER SECTION -->
+    <section id="about" class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brandBlue mb-2">The Messier Advantage</h2>
+                <p class="text-3xl font-extrabold text-brandNavy">Direct Contact with a Licensed Pro, Not a Call Center</p>
+                <p class="mt-3 text-slate-600 text-base">Large HVAC corporations inflate prices to fund massive overhead. At Messier Climate Solutions, you deal directly with owner and licensed professional Josh Messier for top-quality service at fair prices.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-sky-100 text-brandBlue rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-2">Licensed & Insured Specialist</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Full compliance with Florida state building codes. Every repair, maintenance tune-up, and replacement is completed to rigorous safety standards.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-2">Rapid Coastal & Inland Dispatch</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Fast response across St. Lucie, Martin, Palm Beach, and Broward counties, with rapid coverage for Wellington, Royal Palm Beach, and Lake Okeechobee.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-2">Transparent Flat-Rate Pricing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">No surprise line items or unnecessaryupsells. You receive clear pricing and a complete explanation before any work begins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SERVICE TABS SECTION -->
+    <section id="services" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brandIce font-bold text-xs uppercase tracking-widest">Service Directory</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-1">Full-Service HVAC Solutions</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">Click a cate
